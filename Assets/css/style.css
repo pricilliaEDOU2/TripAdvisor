@@ -1,0 +1,87 @@
+/*GENERAL*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: TS-Reg, sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  width: 1135px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+h1 {
+  font-size: 54px;
+  font-family: TS-Med, sans-serif;
+  line-height: 65px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  margin: 20px 0 5px 0;
+}
+
+/*----------HEADER-----------------*/
+/*---------------------------------*/
+/*---------------------------------*/
+/*---------------------------------*/
+/*---------------------------------*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.header img {
+  width: 200px;
+  height: §0px;
+}
+
+header a {
+  border-radius: 20px;
+  padding: 8px 10px;
+}
+
+header a:hover {
+  background-color: #dcd8d8;
+}
+
+header .btn {
+  width: 150px;
+  height: 40px;
+  background-color: #333333;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 50%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav li {
+  display: block;
+}
+nav p {
+  font-size: 16px;
+  font-weight: normal;
+}
