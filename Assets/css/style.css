@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  width: 1135px;
+  max-width: 1184px;
   margin: 0 auto;
   height: 100%;
 }
@@ -36,10 +36,12 @@ h1 {
   justify-content: space-between;
   height: 60px;
 }
-
+.hidden {
+  display: none;
+}
 .header img {
   width: 200px;
-  height: §0px;
+  height: 60px;
 }
 
 header a {
@@ -64,23 +66,6 @@ header .btn {
   border: none;
 }
 
-header nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  width: 50%;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-nav li {
-  display: block;
-}
 nav p {
   font-size: 16px;
   font-weight: normal;
@@ -103,23 +88,24 @@ h1 + p {
 
 .choice {
   display: flex;
-
-  justify-content: space-between;
-  width: 100%;
   gap: 10px;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
-.choice div:nth-child(n) {
-  flex: 1;
+.choice > div {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+
+  width: calc((100% - 50px) / 6);
+  padding: 15px;
   border-radius: 10px;
   border: 1px solid black;
   padding: 15px;
 }
 
+.choice .slice {
+  display: none;
+}
 .choice div:hover {
   color: white;
   background-color: #000;
@@ -133,6 +119,7 @@ h1 + p {
 
 .picture-city1 {
   flex: 1;
+  height: 100%;
 }
 .city img {
   width: 100%;
@@ -168,6 +155,7 @@ h1 + p {
 .infos-city {
   display: flex;
   justify-content: space-between;
+  gap: 20%;
 }
 .infos-city h2 {
   margin: 25px 0;
@@ -186,32 +174,38 @@ h1 + p {
   text-decoration: solid;
 }
 .infos-city-text {
-  width: 45%;
+  width: 60%;
 }
 
 .maps-city {
-  /*display: flex;
-  flex-direction: column;*/
-  width: 45%;
+  width: 40%;
 }
 .maps-city h3 {
   font-size: 32px;
   font-weight: normal;
   letter-spacing: 2px;
+  margin-top: 30px;
 }
 .maps-city p {
   font-size: 15px;
-
   font-weight: normal;
   letter-spacing: 2px;
+  margin: 20px 0;
 }
 div .maps-city-text {
   background-color: #fe5d5d;
-  height: 50%;
+  height: 65%;
   padding: 30px 20px;
+  border-radius: 20px 20px 0 0;
 }
 div .maps-city-img {
+  height: 35%;
+}
+div .maps-city-img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 0 20px 20px;
 }
 .maps-city .btn {
   width: 150px;
@@ -223,36 +217,21 @@ div .maps-city-img {
   line-height: 20px;
   border-radius: 15px;
   border: none;
-  margin-bottom: 50px;
+  margin: 20px 0;
+}
+/*CAROUSSEL*/
+
+.must a {
+  text-decoration: none;
 }
 
-.must-of-paris {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 60px 15px;
-}
-
-.must-of-paris div {
-  width: 265px;
-}
-
-.must-of-paris img {
-  object-fit: cover;
-  max-width: 100%;
-}
-
-.must {
-  margin: 40px 0;
-}
-.must h2 {
+.must h3 {
   margin: 35px 0;
   font-size: 28px;
   font-weight: bolder;
   line-height: 34px;
 }
-
-.must-of-paris > div h3 {
+.must-of-paris > div h4 {
   padding: 0 0 35px 0;
   font-size: 24px;
   font-weight: bold;
@@ -263,4 +242,215 @@ div .maps-city-img {
   font-weight: normal;
   line-height: 22px;
   color: #333333;
+}
+
+.must-of-paris {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+.must-of-paris-description {
+  width: 270px;
+}
+.must-paris-pictures {
+  display: flex;
+  flex: 1;
+  gap: 16px;
+  overflow: scroll hidden;
+}
+.must-paris-pictures i not .circle {
+  color: #04a96c;
+}
+.must-paris-pictures > div {
+  flex-shrink: 0;
+  width: calc((100% - 32px) / 3);
+}
+.must-paris-pictures a img {
+  object-fit: cover;
+  width: 100%;
+  /*aspect-ratio: 270/200;*/
+  object-fit: cover;
+  height: 200px;
+}
+.must-paris-pictures div:nth-child(n) {
+  position: relative;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  top: -86%;
+  right: -82%;
+}
+
+.circle i {
+  align-items: center;
+  border: black;
+}
+
+.travellers-choice {
+  width: 35px;
+  height: 45px;
+  position: absolute;
+  bottom: 45%;
+  left: 3%;
+  border-radius: 50px 50px 10px 10px;
+}
+.yellow {
+  background-color: #f2b301;
+}
+.green {
+  background-color: #36e0a1;
+}
+
+footer {
+  height: 155px;
+  background-color: #f9f1ec;
+}
+footer img {
+  width: 40px;
+  height: 40px;
+}
+footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/*Medias query*/
+
+@media (max-width: 1184px) {
+  .container {
+    padding: 0 25px;
+  }
+  .choice .slice {
+    display: flex;
+  }
+  .choice > div {
+    width: calc((100% - 30px) / 4);
+  }
+
+  .choice {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1024px) {
+  header span {
+    display: none;
+  }
+
+  .picture-city1 {
+    flex: none;
+    width: 65%;
+  }
+
+  .picture-city2 {
+    width: 35%;
+
+    margin: cal((100%-320px)/2) 0;
+  }
+
+  .infos-city-text {
+    width: 100%;
+  }
+  .maps-city {
+    display: none;
+  }
+  .must-of-paris-description {
+    width: 315px;
+  }
+
+  .must-paris-pictures > div {
+    width: calc((100% - 32px) / 2.5);
+  }
+  .must-paris-pictures a img {
+    height: 142px;
+  }
+}
+
+@media (max-width: 920px) {
+  .must-of-paris-description {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container {
+    padding-right: 0;
+  }
+  .hidden {
+    display: flex;
+  }
+
+  header a {
+    display: none;
+  }
+
+  header .btn {
+    display: none;
+  }
+  .visibility {
+    display: flex;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .header img {
+    width: 130px;
+    height: 28px;
+  }
+
+  .header {
+    align-items: center;
+  }
+
+  .choice {
+    flex-wrap: nowrap;
+    overflow: scroll hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /*Masquer la  scrollbar*/
+  .choice::-webkit-scrollbar {
+    display: none;
+  }
+
+  .choice > div {
+    width: fit-content;
+    flex-shrink: 0;
+
+    gap: 10px;
+  }
+  .picture-city1 {
+    width: 100%;
+  }
+  .picture-city2 {
+    display: none;
+  }
+  .destination {
+    display: none;
+  }
+
+  .must-of-paris {
+    flex-direction: column;
+  }
+  .must-of-paris-description {
+    width: 100%;
+  }
+}
+@media (max-width: 696px) {
+  .must-paris-pictures > div {
+    width: calc((100% - 16px) / 1.5);
+  }
+  .must-paris-pictures a img {
+    height: 398px;
+  }
 }

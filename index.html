@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./Assets/css/reset.css" />
     <link rel="stylesheet" href="./Assets/css/style.css" />
     <link rel="stylesheet" href="./Assets/css/fonts.css" />
+    <link rel="stylesheet" href="./Assets/css/icons.css" />
     <script
       src="https://kit.fontawesome.com/44409e9fa6.js"
       crossorigin="anonymous"
@@ -18,34 +19,38 @@
 
     <header class="container">
       <div class="header">
+        <a class="hidden" href="#" target="_blank">
+          <i class="icon-pencil"></i>
+        </a>
+
         <img
           src="./Assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg"
           alt="Logo Tripadvisor"
         />
 
-        <!-- <input type="search" id="site-search" name="country" />
-        <i class="fa-light fa-magnifying-glass"></i>-->
-
         <nav>
           <a href="#" target="_blank">
-            <i class="fa-solid fa-pen"></i>
+            <i class="icon-pencil"></i>
             <span>Avis</span>
           </a>
 
           <a href="#" target="_blank">
-            <i class="fa-regular fa-heart"></i>
+            <i class="icon-heart"></i>
             <span>Voyages</span>
           </a>
 
           <a href="#" target="_blank">
-            <i class="fa-regular fa-bell"></i>
+            <i class="icon-clock"></i>
             <span>Alertes</span>
           </a>
 
           <button class="btn" type="button">Connectez-vous</button>
 
-          <a href="#" target="_blank">
-            <i class="fa-solid fa-cart-shopping"></i>
+          <a class="hidden" href="#" target="_blank">
+            <i class="icon-clock"></i>
+          </a>
+          <a class="visibility" href="#" target="_blank">
+            <i class="icon-clock"></i>
             <span>Panier</span>
           </a>
         </nav>
@@ -64,33 +69,35 @@
         <nav class="choice">
           <div>
             <p>Hotels</p>
-            <i class="fa-solid fa-bed"></i>
-          </div>
-          <div>
-            <p>Locations de vacances</p>
-            <i class="fa-solid fa-key"></i>
+            <i class="icon-hotels"></i>
           </div>
           <div>
             <p>Activités</p>
-            <i class="fa-solid fa-key"></i>
+            <i class="icon-attractions"></i>
           </div>
           <div>
-            <p>
-              Restaurant
-              <i class="fa-solid fa-utensils"></i>
-            </p>
+            <p>Locations de vacances</p>
+            <i class="icon-vacation_rentals"></i>
+          </div>
+          <div>
+            <p>Restaurants</p>
+            <i class="icon-restaurants"></i>
           </div>
           <div>
             <p>Forums de voyage</p>
-            <i class="fa-solid fa-key"></i>
+            <i class="icon-forums"></i>
           </div>
-          <div>
+          <div class="slice">
             <p>Vols</p>
-            <i class="fa-solid fa-key"></i>
+            <i class="icon-flights"></i>
+          </div>
+          <div class="slice">
+            <p>Croisières</p>
+            <i class="icon-cruises"></i>
           </div>
           <div>
             <p>Plus</p>
-            <i class="fa-solid fa-ellipsis"></i>
+            <i class=""></i>
           </div>
         </nav>
         <section class="city">
@@ -167,94 +174,736 @@
 
               <button class="btn" type="button">Créer un voyage</button>
             </div>
-            <!--<div class="maps-city-img">
+            <div class="maps-city-img">
               <img src="./Assets/img/maps_cnuhsr.png" alt="maps paris" />
-            </div>-->
+            </div>
           </div>
         </section>
+
         <section class="must">
-          <h2>Paris : les immanquables</h2>
+          <h3>Paris : les immanquables</h3>
           <div class="must-of-paris">
-            <div>
-              <h3>Se divertir</h3>
+            <div class="must-of-paris-description">
+              <h4>Se divertir</h4>
               <p>
                 Des lieux à voir, des rues à explorer et des expériences
                 emblématiques à Paris.
               </p>
               <a href="#" target="_blank"> Tout à afficher</a>
             </div>
+            <div class="must-paris-pictures">
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
 
-            <div>
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/4f/70/dc/cour-napoleon-et-pyramide.jpg?w=400&h=300&s=1"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f0/d0/9b/arc-de-triomphe-at-night.jpg?w=400&h=300&s=1"
-                alt=""
-              />
-            </div>
+                  <p>La Tour Eiffel</p>
+                  <i class="icon-bubble_rating_bg"></i
+                  ><i class="icon-bubble_rating_bg"></i
+                  ><i class="icon-bubble_rating_bg"></i
+                  ><i class="icon-bubble_rating_bg"></i
+                  ><i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+                <div class="circle">
+                  <i class="icon-heart"></i>
+                </div>
+              </div>
 
-            <div>
-              <h3>Se reposer</h3>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/4f/70/dc/cour-napoleon-et-pyramide.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+
+                  <p>Musée du Louvre</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i> &nbsp;
+                  <span>102 538</span>
+                  <p>Bâtiments architecturaux, Muséees d'art</p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f0/d0/9b/arc-de-triomphe-at-night.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+
+                  <p>Arc de Triomphe</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i> &nbsp;
+                  <span>45 908</span>
+                  <p>Bâtiments architecturaux, Sites historiques</p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    class="city"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+
+                  <p>Musée du Louvre</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i> &nbsp;
+                  <span>102 538</span>
+                  <p>Bâtiments architecturaux, Muséees d'art</p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    class="city"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="must-of-paris">
+            <div class="must-of-paris-description">
+              <h4>Se reposer</h4>
               <p>Un mélange de charme, de symboles et de modernité.</p>
               <a href="#" target="_blank"> Tout à afficher</a>
             </div>
+            <div class="must-paris-pictures">
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
 
-            <div>
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/0f/02/d0/junior-suite.jpg?w=400&h=300&s=1"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/e7/72/45/superior-room.jpg?w=400&h=300&s=1"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/f8/9d/14/studio-fpr-3-persons.jpg?w=400&h=300&s=1"
-                alt=""
-              />
-            </div>
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+              </div>
 
-            <div>
-              <h3>Se restaurer</h3>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/4f/70/dc/cour-napoleon-et-pyramide.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+
+                  <p>Musée du Louvre</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i> &nbsp;
+                  <span>102 538</span>
+                  <p>Bâtiments architecturaux, Muséees d'art</p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f0/d0/9b/arc-de-triomphe-at-night.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+
+                  <p>Arc de Triomphe</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i> &nbsp;
+                  <span>45 908</span>
+                  <p>Bâtiments architecturaux, Sites historiques</p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+
+                  <p>Musée du Louvre</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i> &nbsp;
+                  <span>102 538</span>
+                  <p>Bâtiments architecturaux, Muséees d'art</p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+                <img
+                  class="travellers-choice yellow"
+                  src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    class="city"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+                  <!--<img
+                    class="travellers-choice yellow"
+                    src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                    alt=""
+                  />-->
+
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    class="city"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+                  <!--<img
+                    class="travellers-choice yellow"
+                    src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                    alt=""
+                  />-->
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    class="city"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+                  <!--<img
+                    class="travellers-choice yellow"
+                    src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                    alt=""
+                  />-->
+
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="must-of-paris">
+            <div class="must-of-paris-description">
+              <h4>Se restaurer</h4>
               <p>Bistrots et bars typiques, et plus encore à Paris.</p>
               <a href="#" target="_blank"> Tout à afficher</a>
             </div>
+            <div class="must-paris-pictures">
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    class="city"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+                  <!--<img
+                    class="travellers-choice yellow"
+                    src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                    alt=""
+                  />-->
 
-            <div>
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-s/03/2b/5a/36/verjus.jpg?w=400&h=300&s=1"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/daodao/photo-s/0b/41/3a/72/caption.jpg?w=400&h=300&s=1"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/68/8b/57/frenchie.jpg?w=400&h=-1&s=1"
-                alt=""
-              />
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+              </div>
+
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    class="city"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/4f/70/dc/cour-napoleon-et-pyramide.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+                  <!--<img
+                    class="travellers-choice yellow"
+                    src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                    alt=""
+                  />-->
+                  <p>Musée du Louvre</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i> &nbsp;
+                  <span>102 538</span>
+                  <p>Bâtiments architecturaux, Muséees d'art</p>
+                </a>
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    class="city"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f0/d0/9b/arc-de-triomphe-at-night.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+                  <!--<img
+                    class="travellers-choice yellow"
+                    src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                    alt=""
+                  />-->
+
+                  <p>Arc de Triomphe</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i> &nbsp;
+                  <span>45 908</span>
+                  <p>Bâtiments architecturaux, Sites historiques</p>
+                </a>
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    class="city"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+                  <!--<img
+                    class="travellers-choice yellow"
+                    src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                    alt=""
+                  />-->
+
+                  <p>Musée du Louvre</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i> &nbsp;
+                  <span>102 538</span>
+                  <p>Bâtiments architecturaux, Muséees d'art</p>
+                </a>
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    class="city"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+                  <img
+                    class="travellers-choice yellow"
+                    src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                    alt=""
+                  />
+
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    class="city"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+                  <!--<img
+                    class="travellers-choice yellow"
+                    src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                    alt=""
+                  />-->
+
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    class="city"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+                  <!--<img
+                    class="travellers-choice yellow"
+                    src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                    alt=""
+                  />-->
+
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    class="city"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+                  <!--<img
+                    class="travellers-choice yellow"
+                    src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                    alt=""
+                  />-->
+
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+              </div>
+              <div>
+                <a href="#" target="_blank">
+                  <img
+                    class="city"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+                    alt=""
+                  />
+                  <!--<img
+                    class="travellers-choice yellow"
+                    src="https://static.tacdn.com/img2/travelers_choice/2022/TC_LL.svg"
+                    alt=""
+                  />-->
+
+                  <p>La Tour Eiffel</p>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="icon-bubble_rating_half"></i>
+                  <span>142 172</span>
+                  <p>
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+              </div>
             </div>
           </div>
+
+          <!--<div class="circle">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+         -->
         </section>
       </div>
     </main>
+
+    <footer>
+      <div>
+        <img
+          src="./Assets/img/Tripadvisor_logoset_solid_green.svg"
+          alt="Logo de Tripadvisor"
+        />
+        <span
+          >Made at
+          <a href="https://www.lereacteur.io/" target="_blank">Le Reacteur</a>by
+          <a href="https://github.com/" target="_blank"
+            >Pricillia EDOU EDOU</a
+          ></span
+        >
+      </div>
+    </footer>
   </body>
 </html>
