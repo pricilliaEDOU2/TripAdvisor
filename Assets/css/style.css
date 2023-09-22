@@ -1,4 +1,7 @@
-/*GENERAL*/
+/*------------------------------------------------------GENERAL----------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+
 * {
   box-sizing: border-box;
 }
@@ -15,6 +18,7 @@ body {
 
 a {
   color: #000;
+  text-decoration: none;
 }
 h1 {
   font-size: 54px;
@@ -24,17 +28,45 @@ h1 {
   letter-spacing: 1.1px;
   margin: 20px 0 5px 0;
 }
-
-/*----------HEADER-----------------*/
-/*---------------------------------*/
-/*---------------------------------*/
-/*---------------------------------*/
-/*---------------------------------*/
+h2 {
+  margin: 25px 0;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: bold;
+  font-family: "TS-Med, sans-seri";
+}
+h3 {
+  margin: 30px 0 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
+  color: #000000;
+}
+h4 {
+  padding: 0 0 20px 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #333333;
+}
+h5 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #000000;
+}
+img:hover {
+  opacity: 0.8;
+}
+/*------------------------------------------------------------------------HEADER-----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
 
 .header {
   display: flex;
   justify-content: space-between;
   height: 60px;
+  align-items: center;
 }
 .hidden {
   display: none;
@@ -47,7 +79,6 @@ h1 {
 header a {
   border-radius: 20px;
   padding: 8px 10px;
-  text-decoration: none;
 }
 
 header a:hover {
@@ -71,11 +102,9 @@ nav p {
   font-weight: normal;
 }
 
-/*----------MAIN-------------------*/
-/*---------------------------------*/
-/*---------------------------------*/
-/*---------------------------------*/
-/*---------------------------------*/
+/*---------------------------------------------------------------------MAIN----------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
 h1 span {
   color: #ff5e5e;
 }
@@ -95,7 +124,6 @@ h1 + p {
 .choice > div {
   display: flex;
   justify-content: space-between;
-
   width: calc((100% - 50px) / 6);
   padding: 15px;
   border-radius: 10px;
@@ -110,7 +138,11 @@ h1 + p {
   color: white;
   background-color: #000;
 }
-/*--------------------Section images--------*/
+
+/*----------------------------------------------Image 1ère section-------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
 .city {
   height: 430px;
   display: flex;
@@ -137,8 +169,10 @@ h1 + p {
   height: 213px;
 }
 
-/*--------------------------*/
-/*Section destination*/
+/*----------------------------------------------Navigation Destination---------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
 .destination {
   display: flex;
   margin: 25px 0;
@@ -149,30 +183,23 @@ h1 + p {
   display: flex;
   gap: 10px;
 }
-.destination a {
-  text-decoration: none;
+.destination a:hover {
+  text-decoration: underline;
 }
+
 .infos-city {
   display: flex;
   justify-content: space-between;
   gap: 20%;
 }
-.infos-city h2 {
-  margin: 25px 0;
-  font-size: 28px;
-  line-height: 34px;
-  font-weight: bold;
-  font-family: "TS-Med, sans-seri";
-}
+
 .infos-city p {
   font-size: 20px;
   line-height: 24px;
   font-weight: normal;
   color: #333333;
 }
-.infos-city > p:hover {
-  text-decoration: solid;
-}
+
 .infos-city-text {
   width: 60%;
 }
@@ -219,24 +246,17 @@ div .maps-city-img img {
   border: none;
   margin: 20px 0;
 }
-/*CAROUSSEL*/
 
-.must a {
-  text-decoration: none;
+/*----------------------------------------------------CAROUSSEL----------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+.must-of-paris {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 60px;
 }
 
-.must h3 {
-  margin: 35px 0;
-  font-size: 28px;
-  font-weight: bolder;
-  line-height: 34px;
-}
-.must-of-paris > div h4 {
-  padding: 0 0 35px 0;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 29px;
-}
 .must-of-paris > div p {
   font-size: 18px;
   font-weight: normal;
@@ -244,57 +264,78 @@ div .maps-city-img img {
   color: #333333;
 }
 
-.must-of-paris {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 60px;
-}
 .must-of-paris-description {
   width: 270px;
+}
+.must-of-paris-description a {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.must-of-paris-description a:hover {
+  color: #545454;
 }
 .must-paris-pictures {
   display: flex;
   flex: 1;
   gap: 16px;
   overflow: scroll hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-.must-paris-pictures i not .circle {
-  color: #04a96c;
+
+/*Masquer la  scrollbar*/
+.must-paris-pictures::-webkit-scrollbar {
+  display: none;
 }
+
 .must-paris-pictures > div {
   flex-shrink: 0;
   width: calc((100% - 32px) / 3);
 }
-.must-paris-pictures a img {
-  object-fit: cover;
-  width: 100%;
-  /*aspect-ratio: 270/200;*/
-  object-fit: cover;
-  height: 200px;
-}
-.must-paris-pictures div:nth-child(n) {
-  position: relative;
-}
-.circle {
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  position: absolute;
-  border-radius: 50%;
-  top: -86%;
-  right: -82%;
+
+.articles a p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
 }
 
-.circle i {
+.rating span {
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+}
+.caroussel {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 270/200;
+  object-fit: cover;
+}
+
+.relative {
+  position: relative;
+}
+
+.heart {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 80%;
+  right: 3%;
+  display: flex;
   align-items: center;
-  border: black;
+  justify-content: center;
 }
 
 .travellers-choice {
   width: 35px;
   height: 45px;
   position: absolute;
-  bottom: 45%;
+  bottom: 5%;
   left: 3%;
   border-radius: 50px 50px 10px 10px;
 }
@@ -304,10 +345,40 @@ div .maps-city-img img {
 .green {
   background-color: #36e0a1;
 }
+.rating {
+  display: flex;
+  align-items: center;
+}
+.rating span {
+  padding-left: 20px;
+}
+
+.icon-bubble_rating_bg,
+.icon-bubble_rating_half,
+.icon-bubble_rating_empty {
+  color: #04a96c;
+  font-size: 18px;
+  justify-content: center;
+}
+.icon-bubble_rating_half,
+.icon-bubble_rating_empty {
+  font-size: 14px;
+}
+.must-paris-pictures.interêt > div {
+  flex-shrink: 0;
+  width: calc((100% - 42px) / 4);
+}
+
+/*----------------------------------------------------CAROUSSEL----------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
 
 footer {
   height: 155px;
   background-color: #f9f1ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer img {
   width: 40px;
@@ -320,7 +391,9 @@ footer > div {
   gap: 10px;
 }
 
-/*Medias query*/
+/*----------------------------------------------------MEDIAS QUERIES------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 1184px) {
   .container {
@@ -350,7 +423,6 @@ footer > div {
 
   .picture-city2 {
     width: 35%;
-
     margin: cal((100%-320px)/2) 0;
   }
 
@@ -367,8 +439,9 @@ footer > div {
   .must-paris-pictures > div {
     width: calc((100% - 32px) / 2.5);
   }
-  .must-paris-pictures a img {
-    height: 142px;
+  .must-paris-pictures.interêt > div {
+    flex-shrink: 0;
+    width: calc((100% - 42px) / 3);
   }
 }
 
@@ -382,6 +455,7 @@ footer > div {
   header .container {
     padding-right: 0;
   }
+
   .hidden {
     display: flex;
   }
@@ -446,11 +520,13 @@ footer > div {
     width: 100%;
   }
 }
+
 @media (max-width: 696px) {
   .must-paris-pictures > div {
     width: calc((100% - 16px) / 1.5);
   }
-  .must-paris-pictures a img {
-    height: 398px;
+  .must-paris-pictures.interêt > div {
+    flex-shrink: 0;
+    width: calc((100% - 24px) / 1.6);
   }
 }
